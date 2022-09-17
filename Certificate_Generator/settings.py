@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-43=zo6+@)ksvb%hh=g6njx#tp#-zy7()i2#!!7g*bug&+#ybdx
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://certifyme-certifategenerator.herokuapp.com'
+    'certifyme-certifategenerator.herokuapp.com'
 ]
 
 
