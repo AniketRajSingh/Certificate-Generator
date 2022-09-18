@@ -68,7 +68,6 @@
         }
 
         .certihead {
-            
             height: 50px;
             border-top-left-radius: 13px;
             border-top-right-radius: 13px;
@@ -95,6 +94,12 @@
             border-bottom-left-radius: 13px;
             border-bottom-right-radius: 13px;
         }
+        .certback
+        {
+            background-image:url(https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_1.png) ;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
         @media only screen and (max-width: 600px){
             h3{
                 font-size: small;
@@ -103,7 +108,7 @@
                 width: 90%;
                 height: fit-content;
                 font-size :8px ;
-                padding:3%;
+                padding:2%;
             }
             .certihead{
                 padding-top: 5%;
@@ -170,20 +175,23 @@
     </h4>
     <div class="main">
         <div class="certificate">
-            <div class="certihead">
-                <h1>Certificate</h1>
-            </div>
-            <div class="certibody">
-                <p>This Certificate Belongs To Mr/Miss <b>
+            <div class="certback">
+
+                <div class="certihead">
+                    <h1>Certificate</h1>
+                </div>
+                <div class="certibody">
+                    <p>This Certificate Belongs To Mr/Miss <b>
                         {{name}} {{middlename}} {{sirname}} </b> for starting {{language}} Learning <br>
-                    as his backend framework for his web developement career start.
-                    <br> <br> I hope he will continue surging for knowledge and become a successful person in life.
-                    <br> My Kind and Sincere Regards to him and his Future.
-                </p>
-            </div>
-            <div class="certifoot">
-                <p>Issuing Officer Signature</p>
-                <p>Issuing Organisation Stamp</p>
+                        as his backend framework for his web developement career start.
+                        <br> <br> I hope he will continue surging for knowledge and become a successful person in life.
+                        <br> My Kind and Sincere Regards to him and his Future.
+                    </p>
+                </div>
+                <div class="certifoot">
+                    <p>Issuing Officer Signature</p>
+                    <p>Issuing Organisation Stamp</p>
+                </div>
             </div>
         </div>
     </div>
