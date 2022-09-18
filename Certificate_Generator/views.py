@@ -7,7 +7,8 @@ def index(request):
 def certificates(request):
     certback1='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_1.png'
     certback2='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_2.png'
-    param={'name':'Aniket','middlename':'Raj','sirname':'Singh','language':'Django','cert_background':certback1,'certback1':certback1,'certback2':certback2}
+    certback3='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_3.png'
+    param={'name':'Aniket','middlename':'Raj','sirname':'Singh','language':'Django','cert_background':certback1,'certback1':certback1,'certback2':certback2,'certback3':certback3}
     firstn=request.GET.get('fname','Aniket')
     middlen=request.GET.get('mname','Raj')
     lastn=request.GET.get('lname','Singh')
@@ -26,5 +27,6 @@ def certificates(request):
 def certform(request):
     certback1='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_1.png'
     certback2='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_2.png'
-    param1={'certback1':certback1,'certback2':certback2}
+    certback3='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_3.png'
+    param1={'certback1':certback1,'certback2':certback2,'certback3':certback3}
     return render(request,'cert_gen_form.html',param1)
