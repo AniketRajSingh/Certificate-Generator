@@ -3,7 +3,8 @@
 
 Initial Phase Takes Input From Users and Generate a Certificate
 
-Future Goals - Give Multiple Certificate Templates for Certificate Generation.
+ Future Goals - <!--Give Multiple Certificate Templates for Certificate Generation.-->
+                        -- Update - Multi Background Support Added.
              - Add Multiple Other Pages to this Project Such as About & Contact 
              - Add Download Certificate Option 
              - Create Multiple Certificates using a csv file.(looping through the Dictionary and using Dict.update() function.)

@@ -5,13 +5,18 @@ from django.shortcuts import render
 def index(request):
     return render(request,'index.html')
 def certificates(request):
-    param={'name':'Aniket','middlename':'Raj','sirname':'Singh','language':'Django'}
+    certback1='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_1.png'
+    certback2='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_2.png'
+    param={'name':'Aniket','middlename':'Raj','sirname':'Singh','language':'Django','cert_background':certback1,'certback1':certback1,'certback2':certback2}
     firstn=request.GET.get('fname','Aniket')
     middlen=request.GET.get('mname','Raj')
     lastn=request.GET.get('lname','Singh')
     langn=request.GET.get('lang','Django')
-    param.update({'name':firstn,'middlename':middlen,'sirname':lastn,'language':langn})
-    print(firstn)
+    certbackground=request.GET.get('certbackground',certback1)
+    param.update({'name':firstn,'middlename':middlen,'sirname':lastn,'language':langn,'cert_background':certbackground})
     return render(request,'certificates.html',param)
 def certform(request):
-    return render(request,'cert_gen_form.html')
+    certback1='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_1.png'
+    certback2='https://raw.githubusercontent.com/AniketRajSingh/Certificate-Generator/aniket_master/static/admin/img/Certificate_template_2.png'
+    param1={'certback1':certback1,'certback2':certback2}
+    return render(request,'cert_gen_form.html',param1)
