@@ -6,7 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate Generator Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <style>
+        .navbar {
+            width: 100%;
+            height: 9vh;
+            background-color: dodgerblue;
+            color: white;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            font-size: x-large;
+            z-index: 3;
+            font-family: system-ui;
+        }
+
+        .left {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            height: 5vh;
+        }
+
+        .right {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navlinks {
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            margin-right: 5%;
+        }
+
+        .navlinks:hover {
+            zoom: 90%;
+
+        }
         .main {
             display: flex;
             justify-content: center;
@@ -56,28 +97,51 @@
             border-bottom-right-radius: 13px;
         }
         @media only screen and (max-width: 600px){
+            h3{
+                font-size: small;
+            }
             .certificate{
                 width: 90%;
-                height: 20%;
+                height: fit-content;
                 font-size :8px ;
+                padding:3%;
             }
             .certihead{
+                padding-top: 5%;
                 padding-bottom: 0;
                 height:fit-content;
+                background:linear-gradient(110deg, hsla(206, 100%, 60%, 1) 0%, hsla(206, 100%, 60%, 1) 52.4%, hsla(186, 100%, 50%, 1) 52.4%, hsla(186, 100%, 50%, 1) 100%);
             }
             .certihead h1{
-                margin-bottom: 0;
+                margin: 0;
+                height: 4vh;
             }
             .certibody{
                 font-size:8px;
                 margin: 0;
                 padding: 0;
-                height: fit-content;
+                height: 15vh;
             }
             .certifoot{
                 margin: 0;
                 padding: 0;
-
+                height: 10vh;
+                background:linear-gradient(15.5deg, hsla(206, 100%, 60%, 1) 0%, hsla(206, 100%, 60%, 1) 65%, hsla(186, 100%, 50%, 1) 65%, hsla(186, 100%, 50%, 1) 100%)
+            }
+            .navbar{
+                font-size: 0.8em;
+        font-family:system-ui;
+            }
+            .left{
+                width: 60%;
+                margin-top: 4%;
+                margin-left: 2%;
+            }
+            .right{
+                width: 38%;
+            }
+            .port{
+                visibility: hidden;
             }
         }
     </style>
@@ -85,7 +149,19 @@
 
 <body
     style="background-image: linear-gradient(to left bottom, #008bff, #82a4ff, #b7bffe, #dfdefe, #ffffff);height: 100vh; color: #ffffff;">
-    <div style="text-align: center; margin-top: 50px;">
+    <nav class="navbar">
+        <div class="left">
+            <p"><b>Certify Me</b> - Certificate Generator</p>
+        </div>
+        <div class="right">
+            <a class="navlinks port"" href=" https://aniketrajsingh.github.io/Portfolio-1"> My Portfolio</a>
+            <a class="navlinks" href="https://github.com/AniketRajSingh"><i
+                    class='bx bxl-github bx-flip-horizontal bx-tada'
+                    style='color:#ffffff; font-size: xx-large;'></i></a>
+
+        </div>
+    </nav>
+    <div style="text-align: center; margin-top: 15vh;">
         <h3>
             Hii there I am Aniket Raj Singh and this a just a small Project to generate Certificates using Django as
             Backend and using Parameters as links. <br>
