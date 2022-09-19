@@ -104,7 +104,7 @@
 
     .bodybody {
       display: flex;
-      height: 130vh;
+      height: 180vh;
       justify-content: center;
       align-items: center;
     }
@@ -168,7 +168,7 @@
     </p>
   </div>
   <div class="bodybody">
-    <form class="formbody" action="/certificates/" method="get">
+    <form class="formbody" action="/certificates/" method="post"> {% csrf_token %}
       <label for="fname">First Name:</label><br>
       <input class="inputtext" type="text" id="fname" name='fname'><br>
       <label for="mname">Middle Name:</label><br>
