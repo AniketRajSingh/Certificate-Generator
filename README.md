@@ -18,4 +18,4 @@ Any Suggestions-
                Ph Number: +91 7248432377
                Whatsapp Link: https://api.whatsapp.com/send/?phone=7248432377&text&type=phone_number
 
-You Can Visit The App Here: certifyme-certificategenerator.herokuapp.com
+You Can Visit The App Here: https://certifyme-certificategenerator.herokuapp.com
